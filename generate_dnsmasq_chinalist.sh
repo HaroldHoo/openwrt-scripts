@@ -128,7 +128,8 @@ _get_args(){
 }
 
 _process(){
-    _BASE_URL='https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf'
+    # _BASE_URL='https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf'
+    _BASE_URL='https://raw.gitmirror.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf'
     _WORKING_DIR=`mktemp -d /tmp/generate_dnsmasq_chinalist.XXXXXX`
     _CHINA_LIST_FILE=$_WORKING_DIR/accelerated-domains.china.conf
     _TMP_FILE=$_WORKING_DIR/generate_dnsmasq_chinalist.tmp
